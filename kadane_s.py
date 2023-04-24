@@ -2,12 +2,6 @@
 
 #find the largest sub array
 
-'''def kadanae(list):
-    #list = [-1,-3,4,1,5,-1,0]
-    added_list =
-    return'''
-
-
 def print_list(list):
     print(list)
     return
