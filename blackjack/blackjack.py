@@ -30,8 +30,6 @@ def calculate_score(list):
         sum += list[i]
         if sum > 21 and (i != len(list) - 1):
             if 11 in list:
-                index = list.index(11)
-                list[index] = 1
                 sum = sum - 10
     return sum
 
@@ -49,7 +47,8 @@ class check_black_jack():
             self.computer_score = calculate_score(self.computer_cards)
 
     def _main(self):
-        print(self.user_cards)
+        print(f"User cards {self.user_cards}")
+        print(f"Computer cards {self.computer_cards[0]}")
         if self.user_score < 21:
             user_input = input("Do you want to deal another card? yes or no ")
             while user_input == "yes":
@@ -57,7 +56,8 @@ class check_black_jack():
                 self.user_cards.append(card)
                 self.user_score = calculate_score(self.user_cards)
                 if self.user_score < 21:
-                    print(self.user_cards)
+                    print(f"User cards {self.user_cards}")
+                    print(f"Computer cards {self.computer_cards[0]}")
                     user_input = input(
                         "Do you want to deal another card? yes or no ")
                 else:
