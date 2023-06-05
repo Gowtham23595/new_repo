@@ -31,6 +31,7 @@ def app():
                 A = B
                 os.system('cls')
                 score = score + 1
+                print(f"You are right , your current score {score}")
                 print(f"Compare A : {A['name']} , a {A['description']} , from {A['country']}")
             else:
                 lives = 0
@@ -40,6 +41,7 @@ def app():
                 A = B
                 os.system('cls')
                 score = score + 1
+                print(f"You are right , your current score {score}")
                 print(f"Compare A : {A['name']} , a {A['description']} , from {A['country']}")
             else:
                 lives = 0
